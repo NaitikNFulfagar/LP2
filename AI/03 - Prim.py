@@ -49,7 +49,6 @@ class Graph:
                 return weight
         return None
 
-# Example usage:
 g = Graph(4)
 g.addEdge(0, 1, 10)
 g.addEdge(0, 2, 6)
