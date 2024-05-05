@@ -40,8 +40,11 @@ def nqueen(arr,x,n) -> bool:
 if __name__=="__main__":
     n = int(input("Enter N for N-Queen Problem "))
     arr = [[0 for _ in range(n)] for _ in range(n)]
-    
+    print("\n\nHere is Solution for",n,"Queens\n\n")
     if (nqueen(arr,0,n)):
         for i in range(n):
-            print(arr[i])    
+            for j in range(n):
+                print(arr[i][j] ,end="\t")
+                
+            print("\n") 
     
