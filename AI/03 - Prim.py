@@ -40,8 +40,12 @@ class Graph:
 
     def print_mst(self, parent):
         print("Edge \tWeight")
+        tot = 0
         for i in range(1, self.V):
             print(parent[i], "-", i, "\t", self.get_weight(parent[i], i))
+            tot = tot + self.get_weight(parent[i], i)
+            
+        print("Total Weight is ",tot)
     
     def get_weight(self, u, v):
         for vertex, weight in self.graph[u]:
@@ -49,6 +53,7 @@ class Graph:
                 return weight
         return None
 
+# Example usage:
 g = Graph(4)
 g.addEdge(0, 1, 10)
 g.addEdge(0, 2, 6)

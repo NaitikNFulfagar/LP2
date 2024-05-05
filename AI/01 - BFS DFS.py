@@ -20,7 +20,6 @@ class Graph:
                 if self.DFS(neighbour, d, visited): 
                     return True 
         return False 
-    
     def BFS(self, s, d): 
         visited = defaultdict(bool) 
         queue = deque([s]) 
@@ -34,7 +33,6 @@ class Graph:
                 if visited[i] == False: 
                     queue.append(i) 
                     visited[i] = True 
-
 if __name__ == '__main__': 
     g = Graph() 
     g.addEdge('H', 'A') 
