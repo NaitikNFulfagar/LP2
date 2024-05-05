@@ -60,6 +60,7 @@ def heuristic(n):
              
         }
         return H_dist[n] 
+    
 Graph_nodes = {
     'A': [('B', 2), ('E', 3)],
     'B': [('C', 1),('G', 9)],
