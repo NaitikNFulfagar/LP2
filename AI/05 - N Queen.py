@@ -33,7 +33,7 @@ def nqueen(arr,x,n) -> bool:
             if nqueen(arr,x+1,n):
                 return True
                         
-            arr[x][col]=0 #bactracking
+            arr[x][col]=0 #backtracking
             
     return False
 
