@@ -43,6 +43,7 @@ if __name__=="__main__":
     n   = int(input("Enter N for N-Queen Problem : "))
     arr = [[0 for _ in range(n)] for _ in range(n)]
     
+    
     if nqueen(arr,0,n)  :
         print("\n\nHere is Solution for",n,"Queens\n\n")
         for i in range(n)   :
